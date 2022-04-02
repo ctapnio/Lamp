@@ -1,0 +1,39 @@
+<div class="sidenav animate__animated animate__backInLeft">
+	<div class="login-main-text">
+		<h1>
+			Lamp
+		</h1>
+		<p><i>Welcome. This is Lamp, an Angular web application running on Spring Boot APIs in the back end. Feel free to post some development news.</i></p>
+	</div>
+</div>
+<div class="main text-center">
+	<div class="col-md-6 col-sm-12 animate__animated animate__slideInUp">
+		<div class="form-signin container py-5 w-100 h-100">
+			<form name='signinForm' (submit)="doLogin()">
+
+				<h2 class="h3 mb-3 fw-normal">Please sign in</h2>
+				<div style="color: red" *ngIf='error'>{{error}}</div>
+				<div class="form-floating">
+					<input type="text" name="username" class="form-control"
+						id="floatingInput" placeholder="JohnDoe" [(ngModel)]="username">
+					<label for="floatingInput">Username</label>
+				</div>
+				<div class="form-floating">
+					<input type="password" name='password' class="form-control"
+						id="floatingPassword" placeholder="Password"
+						[(ngModel)]="password"> <label for="floatingPassword">Password</label>
+				</div>
+				<br>
+
+
+				<button class="w-100 btn btn-lg btn-primary" type="submit">Sign
+					in</button>
+				<p class="mt-5 mb-3">
+					Don't have account? <a href="/register" routerLink="/register">Register</a>
+				</p>
+				<p class="text-muted">&copy; 2022</p>
+			</form>
+		</div>
+
+	</div>
+</div>

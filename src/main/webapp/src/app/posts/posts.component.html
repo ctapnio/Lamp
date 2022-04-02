@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-2">&nbsp;</div>
+	<div class="col-md-8">
+		<div id="postsPanel py-0" class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-12">
+						<mat-tab-group mat-align-tabs="center" color="transparent"> 
+							<mat-tab >
+							<ng-template mat-tab-label><span (click)="refresh()">All Posts</span></ng-template>
+								<app-post-list></app-post-list>
+							</mat-tab> 
+							<mat-tab label="My posts">
+								<app-post-myposts></app-post-myposts>
+							</mat-tab> 
+							<mat-tab label="Add post">
+								<app-post-add></app-post-add>
+							</mat-tab> 
+						</mat-tab-group>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2">&nbsp;</div>
+</div>

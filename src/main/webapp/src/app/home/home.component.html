@@ -1,0 +1,15 @@
+<nav class="navbar navbar-light">
+
+  <div class="container  py-3">
+		<a class="navbar-brand px-2 py-3" href="#">Lamp</a>
+		<ul *ngIf="isLoggedIn" class="nav justify-content-end">
+			<li class="nav-item "><a class="nav-link accent-color" style="cursor: pointer;" (click)="doLogout()">Logout</a></li>
+			<li class="nav-item"><a class="nav-link disabled">{{ loggedInUser }}</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<app-posts></app-posts>
+</div>
+

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+	height: 100%;
+}
+
+body,h2 {
+	margin: 0;
+	font-family: 'Ramaraja', serif !important;
+}
+
+.navbar-brand {
+	font-family: 'EB Garamond', serif;
+	font-size: 3em !important;
+}
+
+.title{
+	font-family: 'Lobster', cursive !important;
+}
+
+.nav{
+	font-family: 'Ramaraja', serif !important;
+	font-size: 1.2em;
+}
