@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-	private baseUrl = 'http://localhost:8080/api/auth';
+	private baseUrl = 'https://lampp.herokuapp.com/api/auth';
 
 	constructor(private router: Router, private http: HttpClient) { }
 
