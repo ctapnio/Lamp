@@ -1,4 +1,4 @@
-# Lampp
+# 💡 Lampp
 An Angular web application running with Spring Boot for security and REST APIs. Users can add posts about their software news and releases.
 
 ## Technologies
