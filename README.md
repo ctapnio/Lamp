@@ -4,6 +4,7 @@ An Angular web application running with Spring Boot for security and REST APIs. 
 ## Technologies
 * [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 * [Java](https://docs.oracle.com/en/java/)
+* [Hibernate](https://www.baeldung.com/spring-boot-hibernate)
 * [HTML](https://www.w3schools.com/TAgs/default.asp)
 * [CSS](https://www.w3schools.com/css/default.asp)
 * [JavaScript](https://www.w3schools.com/js/default.asp)
