@@ -1,0 +1,13 @@
+h3 {
+	color: blue;
+}
+
+#postsPanel {
+	margin-top: 50px;
+}
+
+.row {
+	margin: 0;
+	font-family: 'Ramaraja', serif !important;
+	font-size: 12px;
+}

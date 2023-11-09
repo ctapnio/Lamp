@@ -1,0 +1,47 @@
+
+<ng-template #content let-modal>
+<div class="modal-header">
+	<h4 class="modal-title" id="modal-basic-title">Edit Post</h4>
+	<button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
+</div>
+<div class="modal-body">
+	<form id="editPostForm" (submit)="onPostEdit(id.value, heading.value, body.value, date.value)">
+		<!-- id: number, author: string, heading:string, body:string, date: string -->
+		<input #id id="postId" name="id" type="hidden" class="form-control" value="{{editPostId}}" /> 
+		<input #heading id="postHeading" name="heading" type="text" class="form-control" placeholder="title" value="{{editPostHeading}}" /> 
+		<label for="postHeading"></label>
+		<textarea #body id="postBody" name="body" type="text" class="form-control" placeholder="body" rows="15" value="{{editPostBody}}"></textarea>
+		<label for="postBody"></label>
+		<input #date id="postDate" name="date" type="hidden" class="form-control" placeholder="date" value="{{editPostDate}}" /> 
+	</form>
+</div>
+<div class="modal-footer">
+	<button form="editPostForm" type="button" class="btn btn-outline-dark"
+		type="submit">Update</button>
+	<button type="button" class="btn btn-outline-dark"
+		(click)="modal.close()">Cancel</button>
+</div>
+</ng-template>
+
+
+<div class="card mx-auto animate__animated animate__slideInDown" *ngFor="let post of posts">
+	<div class="row">
+		<div class="col-md-8">
+			<h2 class="title">{{ post.heading }}</h2>
+			<p>posted: {{ post.date }}</p>
+		</div>
+		<div class="col-md-4 text-end">
+			<button (click)="onPostDelete(post.id)" type="button" mat-fab color="warn">
+				<mat-icon aria-hidden="false" aria-label="Delete">delete</mat-icon>
+			</button>
+			<button (click)="open(content, post.id.toString(), post.heading, post.body, post.date.toString())" type="button" mat-fab color="primary">
+				<mat-icon aria-hidden="false" aria-label="Delete">edit</mat-icon>
+			</button>
+		</div>
+	</div>
+	<div class="row">
+		<p>{{ post.body }}</p>
+	</div>
+
+
+</div>

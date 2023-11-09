@@ -1,0 +1,14 @@
+<div class="form-group py-3">
+	<form (submit)="onPostAdd(heading.value, body.value, '')">
+		<input #heading id="postHeading" name="heading" type="text" class="form-control" placeholder="title" [(ngModel)]="addPostHeading"/>
+		<label for="postHeading"></label>
+		<textarea #body id="postBody" name="body" type="text" class="form-control" placeholder="body" [(ngModel)]="addPostBody" rows="20"></textarea>
+		<label for="postBody"></label>		
+		<div class="text-center">
+			<button class="customButton my-2" type="submit"> Add </button>
+			
+		</div>
+	
+	</form>
+</div>
+

@@ -1,0 +1,6 @@
+{
+	"/api": {
+		"target": "https://lampp.herokuapp.com",
+		"secure": "true"
+	}
+}

@@ -1,0 +1,11 @@
+/* From cssbuttons.io by @adamgiebl */
+.card {
+	width: 90%;
+	justify-content: center;
+	height: auto;
+	border-radius: 30px;
+	background: #e0e0e0;
+	box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+	padding: 20px;
+	margin: 50px;
+}

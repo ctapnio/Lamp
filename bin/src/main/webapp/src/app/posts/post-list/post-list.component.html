@@ -1,0 +1,28 @@
+
+<form class="form animate__animated animate__slideInDown d-flex justify-content-center">
+	<div class="input-group input-group-md w-50 ">
+		<input #keyword type="text" class="form-control mt-4"
+			placeholder="Search by keyword" aria-label="Sizing example input"
+			aria-describedby="inputGroup-sizing-lg"
+			(keyup.enter)="search(keyword.value)">
+	</div>
+</form>
+
+<div class="card mx-auto animate__animated animate__slideInDown"
+	*ngFor="let post of posts">
+	<div class="row">
+		<div class="col-md-8">
+			<h2 class="title">{{ post.heading }}</h2>
+			<p>posted: {{ post.date }}</p>
+		</div>
+		<div class="col-md-4 text-end">
+			<p>by: {{ post.author }}</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<p>{{ post.body }}</p>
+	</div>
+
+
+</div>
