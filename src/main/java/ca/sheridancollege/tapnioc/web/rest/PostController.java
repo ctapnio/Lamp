@@ -19,7 +19,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/posts")
-@CrossOrigin(value = "http://localhost:4200")
+@CrossOrigin(value = "http://localhost:8080")
 public class PostController {
 
 	private PostService postService;

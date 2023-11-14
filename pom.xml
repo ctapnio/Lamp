@@ -99,7 +99,6 @@
 		            <subscriptionId>55fe4060-23ff-493c-ae8a-1e9bf561d71c</subscriptionId>
 		            <clusterName>lamp</clusterName>
 		            <appName>lampp</appName>
-		            <apiVersion>2022-11-01</apiVersion>
 		            <isPublic>true</isPublic>
 		            <deployment>
 		                <cpu>1</cpu>

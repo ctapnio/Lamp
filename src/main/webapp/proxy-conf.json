@@ -1,6 +1,8 @@
 {
 	"/api": {
-		"target": "https://lampp.herokuapp.com",
+		"target": "https://lampp.internal.blackpebble-ee342ca0.eastus.azurecontainerapps.io",
 		"secure": "true"
 	}
 }
+
+/*"target": "https://lampp.herokuapp.com",*/
