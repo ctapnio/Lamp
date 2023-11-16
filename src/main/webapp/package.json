@@ -3,11 +3,11 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve --proxy-config proxy-conf.json --open",
+        "start": "ng serve --host 0.0.0.0 --open",
         "build": "ng build",
         "postbuild": "npm run deploy",
         "predeploy": "rimraf ../resources/static/ && mkdirp ../resources/static",
-        "deploy": "copyfiles -f dist/** ../resources/static",
+        "deploy": "ng build --prod && cp dist/webapp/* ../resources/static",
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
     },

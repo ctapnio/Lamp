@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 export class AuthService {
 
 	//private baseUrl = 'https://lampp.herokuapp.com/api/auth';
-	private baseUrl = 'https://lampp.internal.blackpebble-ee342ca0.eastus.azurecontainerapps.io/api/auth';
+	//private baseUrl = 'http://localhost:8080/api/auth';
+	private baseUrl = 'https://lamppapp.azurewebsites.net/api/auth';
 
 	constructor(private router: Router, private http: HttpClient) { }
 
