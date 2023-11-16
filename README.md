@@ -12,6 +12,8 @@ An Angular web application running with Spring Boot for security and REST APIs. 
 * [MySQL](https://dev.mysql.com/doc/)
 * [H2 Database](https://www.h2database.com/html/main.html)
 * [Angular](https://angular.io/docs)
+* [Docker](https://docs.docker.com/)
+* [Azure](https://learn.microsoft.com/en-us/azure/container-apps/overview)
 
 ## Screenshots
 ![](Lampp-screenshot1.png)
